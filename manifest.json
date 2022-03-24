@@ -1,0 +1,29 @@
+{
+  "name": "QR Reader",
+  "version": "2.0.0",
+  "manifest_version": 2,
+  "description": "Addon to read a QR code from a PDF document",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": ["src/bg/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [""],
+      "run_at": "document_end",
+      "js": [
+        "src/libs/index.min.js",
+        "src/libs/pdf.js",
+        "src/inject/readerAddon.js"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "permissions": ["clipboardRead", "clipboardWrite"]
+}
