@@ -1,4 +1,3 @@
-![alt text](https://github.com/Creditas/HouseOfMaps/blob/master/img/camera-photo-settings-photography-setting-tool-tools-digital-reflex_169-512.png?raw=true)
+# QR Reader Addon
 
-# Propósito
-PROPÓSITO DA EXTENSÃO
+Adds a way to read a QR code from a PDF document. Designed for a specific page, but the concepts can be taken to other projects and needs.
